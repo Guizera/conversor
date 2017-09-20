@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>conversor de binario/decimal/hexadecimal</title>
+        <meta name="author" content="Guilherme Cunha">
+        <meta name="description" content="Conversor de numeros binarios, decimais e hexadecimais">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header class="row">
+            <div class="small-12 medium-12 large-12 columns">
+                <h1>Sistema de conversão</h1>
+            </div>
+        </header>
+        <div class="selector">
+            <div class="row tipo-numero">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="button small radius decimal">Decimal</div>
+                    <div class="button small radius binario">Binario</div>
+                    <div class="button small radius hexadecimal">Hexadecimal</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form class="formulario">
+                <div class="small-12 medium-4 large-3 columns tipo"><h5>Numero Decimal</h5></div>
+                <div class="small-12 medium-6 large-6 columns left">
+                  <div class="row collapse postfix-round">
+                    <div class="small-12 medium-12 large-12 columns">
+                      <input type="text" id="numero" class="radius" placeholder="Digite aqui o numero" />
+                    </div>
+                    <small id="error" class="error"></small>
+                  </div>
+                </div>
+            </form> 
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <ul class="resultados">
+                    <li><strong>Decimal: </strong><span id="resultado-dec"></span></li>
+                    <li><strong>Binario: </strong><span id="resultado-bin"></span></li>
+                    <li><strong>Hexadecimal: </strong><span id="resultado-hex"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Guilherme Cunha</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/conversor.js" type="text/javascript"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
